@@ -27,6 +27,7 @@
     :root{
         --primary-text-color:rgba(28, 28, 28, 1);
         --secondary-text-color:rgba(119, 119, 119, 1);
+        /* --text-white-color:#F4F4F4; */
         --gradient-color-1: #FF0000;
         --gradient-color-2: #FF8938;
         /* --gradient:linear-gradient(-90deg,  0%,  100%); */
@@ -38,12 +39,12 @@
 
 <body class="manrope-font">
     <header>
+        <!-- banner -->
         <div class="banner-container container mx-auto mt-16 mb-32 grid grid-cols-2 gap-28">
              <div class="banner-contant space-y-10 ml-30">
             <h1 class="text-(--primary-text-color) font-extrabold text-[80px]">It's good <br>tea time at The Tea House</h1>
             <p class="text-(--secondary-text-color) font-medium text-xl ">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-            <button class="bg-linear-to-r from-(--gradient-color-2) to-(--gradient-color-1) rounded-xl px-5 py-4 text-xl font-bold text-[#FFFFFF] hover:shadow-xl cursor-pointer">Explore More
-                <span><i class="fa-solid fa-arrow-up rotate-45"></i></span>
+            <button class="bg-linear-to-r from-(--gradient-color-2) to-(--gradient-color-1) rounded-xl px-5 py-4 text-xl font-bold text-[#FFFFFF] hover:shadow-xl hover:bg-none hover:bg-[#18022a]   cursor-pointer">Explore More<span><i class="fa-solid fa-arrow-up rotate-45"></i></span>
             </button>
         </div>
 
@@ -61,6 +62,7 @@
         </div>
     </header>
     <main>
+        <!-- featured -->
         <section class="featured container mx-auto mb-32">
             <h2 class="font-extrabold text-5xl text-center text-(--primary-text-color)">Our Featured Products</h2>
             <p class="font-medium text-base text-(--secondary-text-color) text-center mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable. </p>
@@ -88,6 +90,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- advertise -->
         <section class="advertise container mx-auto mb-32 flex justify-evenly">
             <div class="ad-image grid grid-cols-2 grid-rows-3 gap-7">
                 <div class="grid-style bg-[linear-gradient(90deg,#FF0000_0%,#FF8938_100%)] opacity-[10%] col-span-1 row-span-1 rounded-xl">
@@ -116,6 +120,40 @@
                
             </div>
         </section>
+
+        <!-- Clients -->
+         <section class="client-container container mx-auto rounded-xl bg-linear-to-l from-(--gradient-color-1) to-(--gradient-color-2) flex justify-around py-20 px-0 relative">
+            <div class="client-content w-[460px] my-auto">
+                <h3 class="font-extrabold text-5xl text-white leading-[4rem]">Meet Our Super Clients</h3>
+                <p class="font-medium text-base text-white mt-5 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                <button class="font-extrabold text-xl bg-white px-7 py-4 rounded-lg hover:bg-[#e4dddd]"> <span class="bg-linear-to-l from-(--gradient-color-1) to-(--gradient-color-2) bg-clip-text text-transparent">Show All</span>
+                </button>
+            </div>
+            <img class="absolute bottom-0 left-48 w-80 h-80" src="images/bg_cup.png" alt="backgoung">
+            <div class="client-cards relative w-[700px]">
+                <div class="bg-white rounded-lg px-12 py-8 w-[500px] z-50 my-[23%]">
+                    <img src="images/client.png" alt="client-img">
+                    <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                    <h6>Ilham Yuda</h6>
+                    <p>Businessman</p>
+                    <img src="images/circles.png" alt="circles Image">
+                </div>
+                <div class="bg-white rounded-lg px-12 py-8 w-[500px] absolute opacity-[30%] top-0 right-0">
+                      <img src="images/client.png" alt="client-img">
+                    <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                    <h6>Ilham Yuda</h6>
+                    <p>Businessman</p>
+                    <img src="images/circles.png" alt="circles Image">
+                </div>
+                <div class="bg-white rounded-lg px-12 py-8 w-[500px] absolute opacity-[30%] top-80 right-0">
+                      <img src="images/client.png" alt="client-img">
+                    <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                    <h6>Ilham Yuda</h6>
+                    <p>Businessman</p>
+                    <img src="images/circles.png" alt="circles Image">
+                </div>
+            </div>
+         </section>
     </main>
 </body>
 </html>
