@@ -61,7 +61,7 @@
         </div>
     </header>
     <main>
-        <section class="featured container mx-auto">
+        <section class="featured container mx-auto mb-32">
             <h2 class="font-extrabold text-5xl text-center text-(--primary-text-color)">Our Featured Products</h2>
             <p class="font-medium text-base text-(--secondary-text-color) text-center mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable. </p>
 
@@ -88,24 +88,32 @@
                 </div>
             </div>
         </section>
-        <section class="advertise">
-            <div class="ad-image">
-                <div></div>
-                <div>
-                    <img src="images/fresh-1.png" alt="orange Juice">
+        <section class="advertise container mx-auto mb-32 flex justify-evenly">
+            <div class="ad-image grid grid-cols-2 grid-rows-3 gap-7">
+                <div class="grid-style bg-[linear-gradient(90deg,#FF0000_0%,#FF8938_100%)] opacity-[10%] col-span-1 row-span-1 rounded-xl">
+
                 </div>
-                <div>
-                    <img src="images/fresh-2.png" alt="mango Juice">
+                <div class="grid-style w-60 bg-[rgba(230,166,35,0.1)] col-span-1 row-span-2 rounded-xl flex justify-center items-center">
+                    <img src="images/fresh-1.png" alt="">
                 </div>
-                <div></div>
+                <div class="grid-style w-60 bg-[rgba(87,118,57,0.1)] flex justify-center items-center col-span-1 row-span-2 rounded-xl">
+                    <img src="images/fresh-2.png" alt="">
+                </div>
+                <div class="grid-style bg-linear-to-r from-[#D9D9D9]  col-span-1 row-span-1 rounded-xl">
+
+                </div>
             </div>
-            <div class="ad-contant">
-                <h2>Great Tea, Freshly Presented</h2>
-                <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
-                <h5>Unique Taste</h5>
-                <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
-                <h5>Premium Quality</h5>
-                <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
+            <div class="ad-contant max-w-xl ">
+                <h2 class="font-extrabold text-5xl text-(--primary-text-color)">Great Tea, Freshly <br> Presented</h2>
+                <p class="font-medium text-base text-(--secondary-text-color) mt-5">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <div class="mt-8 max-w-md">
+                     <h5 class="font-extrabold text-xl text-(--primary-text-color) mb-3">Unique Taste</h5>
+                <p class="font-medium text-base text-(--secondary-text-color) mb-5">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                <h5 class="font-extrabold text-xl text-(--primary-text-color) mb-3">Premium Quality</h5>
+                <p class="font-medium text-base text-(--secondary-text-color) mb-5
+                ">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+                </div>
+               
             </div>
         </section>
     </main>
