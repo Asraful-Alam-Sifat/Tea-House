@@ -17,16 +17,48 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
-    *{
+    
+  *{
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
     }
-</style>
 
-</head>
-<body>
+    :root{
+        --primary-text-color:rgba(28, 28, 28, 1);
+        --secondary-text-color:rgba(119, 119, 119, 1);
+        --gradient-color-1: #FF0000;
+        --gradient-color-2: #FF8938;
+        /* --gradient:linear-gradient(-90deg,  0%,  100%); */
+    }
+
    
+</style>
+</head>
+
+<body class="manrope-font">
+    <header>
+        <div class="banner-container max-w-7xl mx-auto mt-16 grid grid-cols-2">
+             <div class="banner-contant space-y-10">
+            <h1 class="text-(--primary-text-color) font-extrabold text-[80px]">It's good <br>tea time at The Tea House</h1>
+            <p class="text-(--secondary-text-color) font-medium text-xl ">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="bg-linear-to-r from-(--gradient-color-2) to-(--gradient-color-1) rounded-xl px-5 py-4 text-xl font-bold text-[#FFFFFF] hover:shadow-xl cursor-pointer">Explore More
+                <span><i class="fa-solid fa-arrow-up rotate-45"></i></span>
+            </button>
+        </div>
+
+        <div class="banner-img relative top-20 ">
+            <img class="absolute" src="images/banner.png" alt="banner-img">
+            <div class="flex justify-center items-center bg-[#FFFFFF] shadow-xl w-64 rounded-2xl px-6 py-4 gap-2 relative top-96 left-20">
+                <span><img width="50" height="80" src="https://img.icons8.com/officel/80/wind-rose.png" alt="wind-rose"/></span>
+                <div class="">
+                    <h4 class="font-extrabold text-3xl">5.00</h4> 
+                <p class="font-semibold text-base text-(--secondary-text-color)">Trust Pilot Ratings</p> 
+                </div>
+               
+            </div>
+        </div>
+        </div>
+    </header>
 </body>
 </html>
